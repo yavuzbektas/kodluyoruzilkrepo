@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "github.vscode-pull-request-github"
+        "github.vscode-pull-request-github",
+        "ms-python.anaconda-extension-pack",
+        "formulahendry.auto-close-tag",
+        "ecmel.vscode-html-css"
     ]
 }
