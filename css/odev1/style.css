@@ -1,0 +1,101 @@
+h1{
+  text-align: center;
+  color: crimson;
+}
+ol {
+  text-align: center;
+  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  
+}
+ol li {
+  list-style-position: inside
+}
+ol li a {
+  
+  text-decoration: none;
+}
+ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+ul li {
+  float: left;
+  border-right:2px solid #bbb;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+ul li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+footer {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  
+  text-align: center;
+  color: rgb(94, 104, 243);
+  
+}
+
+nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+
+}
+#baslik2{
+  text-align: center;
+  color: rgb(94, 95, 24);
+}
+#p_1{
+  text-align: left;
+  color: rgb(27, 25, 26);
+}
