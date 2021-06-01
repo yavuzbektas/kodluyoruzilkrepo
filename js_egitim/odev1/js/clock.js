@@ -17,8 +17,38 @@ function showTime()
     let mi = nDate.getMinutes();
     let s = nDate.getSeconds();
     let y = nDate.getFullYear();
+    let day = nDate.getDay();
+    let dayString="";
+    switch (day) {
+        case 1:
+            dayString="Pazartesi";
+            break;
+        case 2:
+            dayString="Salı";
+            break;
+        case 3:
+            dayString="Çarşamba";
+            break;
+        case 4:
+            dayString="Perşembe";
+
+            break;
+        case 5:
+            dayString="Cuma";
+            break;
+        case 6:
+            dayString="Cumartesi";
+            break;
+        case 0:
+            dayString="Pazar";
+            break;
+        default:
+            break;
+    }
+    if (m<10) {m="0"+(m+1); }
+    if (d<10) {d="0"+(d+1); }
     let myDate = document.querySelector('#myClock')
-    let alldate = y +" "+ (m+1) + " " + d + " " + h+":"+mi+":"+s
+    let alldate = y +" "+ m + " " + d + " " + h+":"+mi+":"+s + " " + dayString 
     myDate.innerHTML = alldate;
     myDate.textContent = alldate;
     setTimeout(showTime, 1000)
