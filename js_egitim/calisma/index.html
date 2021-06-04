@@ -6,7 +6,7 @@
   </head>
   <body>
     <form id="form1" onsubmit="getFormvalue()">
-      First name: <input type="text" name="fname" value="David" /><br />
+      First name: <input id="fname"  type="text" name="fname" value="David" /><br />
       Last name: <input type="text" name="lname" value="Beckham" /><br />
       <input type="submit" value="Submit" />
     </form>
@@ -98,7 +98,71 @@ Sample HTML file -->
         </select>
         <input type="button" onclick="getOptions()" value="Count and Output all items">
     </form>
-        
+    <form action="#" id="selectColor">
+      <label for="color">Choose a color</label>
+        <select name="colors" id="select">
+          <option value="red">RED</option>
+          <option value="blue">BLUE</option>
+          <option value="purple">PURPLE</option>
+          <option value="orange">ORANGE</option>
+          <option value="pink">PINK</option>
+        </select>
+        <br><br>
+      <input type="submit" value="Submit">
+    </form>  
+    <br><br><br>
+
+    <form method="GET">
+      <input type="text" name="username" placeholder="Kullanıcı adınızı giriniz" />
+      <input type="password" name="password" placeholder="Şifrenizi giriniz." />
+      <button type="submit">Giriş</button>
+    </form>
+    
+<br><br><br>
+    <form onsubmit="handleSubmit(e)" method="POST">
+      <input
+        type="text"
+        name="username"
+        placeholder="Kullanıcı adınızı giriniz"
+        onchange="handleChange(event)"
+      />
+      <input
+        type="password"
+        name="password"
+        placeholder="Şifrenizi giriniz."
+        onchange="handleChange(event)"
+      />
+      <button type="submit">Giriş</button>
+    </form>
+    
+    <script>
+      var username;
+      var password;
+      function handleSubmit(e) {
+        e.preventDefault();
+        console.log("username:" + username + "-" + "password:" + password);
+      }
+      function handleChange(e) {
+        if (e.target.name === "username") {
+          username = e.target.value;
+        }
+        if (e.target.name === "password") {
+          password = e.target.value;
+        }
+      }
+    </script>
+
+<form>
+  <h1>
+  Kullanıcı Bilgileri
+  </h1>
+  <input id="username" type="text" fname="name" value="" placeholder="adiniz">
+  <input id="userlastname" type="text" fname="lastname" value="" placeholder="soy adiniz">
+  <input id="userage" type="number" fname="age" value="" placeholder="yaşınız">
+  <input id="adress" type="text" fname="adress" value="" placeholder="adresinizz">
+  <input id="birthday" type="date" fname="birthday" value="" >
+  <input type="submit">
+  </form>
     <script src="js.js"></script>
   </body>
 </html>

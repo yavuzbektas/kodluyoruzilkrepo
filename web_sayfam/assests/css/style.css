@@ -1,3 +1,37 @@
 .bg_dark_style{
     background-color: #db4437;
 }
+
+.fa_icon_color{
+    color: azure;
+    border-color: azure;
+    border: 1px;
+}
+.fa_icon_color:hover{
+    color: rgb(157, 167, 167);
+    border-color: rgb(103, 109, 109);
+    border: 1px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
