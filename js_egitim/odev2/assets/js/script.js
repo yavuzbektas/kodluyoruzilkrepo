@@ -32,6 +32,7 @@ function newElement() {
     node.appendChild(child)  ;
     
     let listNode = document.getElementById("list").appendChild(node);  
+    localStorage.setItem("items",textnode)
     doneElement();
     showToast("success");  
     inputnode.value="";
@@ -79,8 +80,10 @@ function localGet() {
 }
 function localSave() {
     let listElements = document.querySelectorAll("li");
-    console.log(listElements.forEach(element => 
-        element.textContent))
+    for (let index = 0; index < listElements.length; index++) {
+        const element = listElements[index];
+        //localStorage.setItem("items",element.textContent)
+    }
     
      
 }
