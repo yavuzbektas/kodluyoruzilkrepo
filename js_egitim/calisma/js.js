@@ -74,3 +74,8 @@ function getOptions() {
     function cuttingFunction(event){
     console.log("etkinlik tipi: " , event.type)
     } 
+
+
+ fetch("https://jsonplaceholder.typicode.com/users").then(response => response.json()).then(user=> console.log(user)).catch(err =>console.log(err))
+ fetch("https://jsonplaceholder.typicode.com/comments").then(response => response.json()).then(user=> user.forEach(user => { console.log(user.email)}))
+ 

@@ -1,0 +1,131 @@
+/* General */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+*::-webkit-scrollbar {width: 8px;background-color: #eee;} 
+*::-webkit-scrollbar-track {background-color: #ccc;} 
+*::-webkit-scrollbar-thumb {background-color: var(--color);border-radius: 5px;}
+
+:root{
+    --color:#5c9ef5;}
+html{
+    scroll-behavior: smooth;} /* kayarak gecme */
+body{
+    font-family: sans-serif;}
+h1{
+    font-size: 24px;
+}
+p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #777;
+    text-align: justify;} /* justify iki yana yasla*/
+a { 
+    text-decoration: none;}
+img {
+    max-width: 100%;
+    height: auto; /*responsive olabilmesi icin */
+}
+li {
+    list-style-type: none;
+}
+form {
+    max-width: 100%;
+    margin: 30px 0;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid var(--color);
+    box-shadow: none;
+    border-radius: 5px;
+
+}
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--color);
+}
+
+/******************* General Class *************** */
+.container {
+    width: 80%;
+    margin: auto;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin:15px 0 ;
+    background-color: var(--color);
+    border-radius: 50%;
+}
+.line-list{
+
+    line-height: 8px;
+}
+.line-1, .line-2, .line-3 {
+    display: inline-block;
+    background-color: var(--color);
+}
+.line-1{
+    width: 15px;
+    height: 15px;
+    
+    background-color: var(--color);
+    border-radius: 50%;
+}
+.line-2{
+    width: 80px;
+    height: 1px;
+}
+.line-3{
+    width: 60px;
+    height: 1px;
+}
+
+.btn {
+    padding: 15px 35px;
+    outline: none;
+    border: 2px solid var(--color);
+    background-color: transparent;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 2s;
+}
+.btn:hover {
+    
+    background-color: var(--color);
+    
+}
+
+/**************  header ******************/
+#header{
+    height: 80vh;
+    background: url(../img/background.png) center right/contain no-repeat  ;
+}
+
+.logo {
+    height: auto;
+    width: 250px;
+    margin-top: 30px;
+}
+.header-content{
+    max-width: 400px;
+    margin-top: 150px;
+}
+.read-more{
+    margin: 20px 0 30px 0;
+}
